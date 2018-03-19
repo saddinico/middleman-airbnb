@@ -4,25 +4,43 @@
 }
 
 .profile {
-  display: flex;
+  display: block;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+
+
+  .profile-items {
+    margin-bottom: 25px;
+  }
+}
+
+.wrapper {
+  background-color: $light-purple;
+  height: 80vh;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+  .red {
+    color: $red;
+  }
 }
 
 
 .link-colour {
-  color: black;
-  opacity: 0.7;
+  color: white;
+  opacity: 0.8;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+  }
 }
 
-.link-colour:hover {
-  color: black;
-  text-decoration: none;
-  opacity: 1;
-}
 
 .size {
-  width: 400px;
+  width: 200px;
 }
 
 #about {
