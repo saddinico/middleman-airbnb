@@ -1,0 +1,19 @@
+
+<div class="container">
+  <h2 class="text-center">This page was made with <i class="fa fa-heart" aria-hidden="true"></i> by</h2>
+  <ul class="team list-inline">
+    <% data.users.each do |user| %>
+    <div class="col-xs-12 col-sm-6">
+      <li>
+        <div class="profile">
+          <div class="profile-items">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle avatar size" %>
+            <div class="profile-items">
+              <%= link_to "#{user.name}", "https://github.com/#{user.github_nickname}", class: "link-colour" %>
+            </div>
+          </div>
+        </li>
+      </div>
+      <% end %>
+    </ul>
+  </div>
